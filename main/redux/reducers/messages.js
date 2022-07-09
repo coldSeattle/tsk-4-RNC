@@ -5,4 +5,5 @@ export const messages = (state, {type, payload}) => {
       ...state,
     };
   }
+  return {...state};
 };
