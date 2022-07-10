@@ -9,8 +9,10 @@ function* fetchMessagesSaga() {
 
     const db = yield call(getDBConnection);
     yield call(createTable, db);
-    yield put(fetchMessagesSuccess(response));
-    yield call(saveMessages, db, response);
+
+    yield put(fetchMessagesSuccess(response.data));
+
+    yield call(saveMessages, db, response.data);
   } catch (error) {
     yield put(fetchMessagesFailure(error.message));
   }

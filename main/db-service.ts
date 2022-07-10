@@ -5,7 +5,7 @@ import {
 } from 'react-native-sqlite-storage';
 import {MessageItem} from './models';
 
-const tableName = 'todoData';
+const tableName = 'messageData';
 
 enablePromise(true);
 
