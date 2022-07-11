@@ -2,7 +2,9 @@
   package="com.main">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    
     <application
       android:name=".MainApplication"
       android:label="@string/app_name"
